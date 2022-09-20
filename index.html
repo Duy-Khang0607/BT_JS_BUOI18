@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>BÀI TẬP JS BUỔI 18</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="container text-center">
+      <div class="card w-100">
+        <!-- CÂU 1  -->
+        <div class="card-header">
+          <h2>
+            Bài tập về nhà(buổi 18) : Cho người dùng nhập vào số nguyên và lưu
+            trữ trong mảng
+          </h2>
+        </div>
+        <div class="row card-body">
+          <div class="col-12 mb-2">
+            <input
+              type="select"
+              class="w-100"
+              placeholder="Nhập mảng :"
+              id="mangNhaptay"
+            />
+          </div>
+          <div class="col-12 mb-2">
+            <input
+              type="select"
+              class="w-100"
+              placeholder="Nhập mảng số thực :"
+              id="mangThuc"
+            />
+          </div>
+          <div class="col-6">
+            <input
+              type="text"
+              id="hoanDoi1"
+              class="alert alert-danger"
+              placeholder="Vị trí 1"
+            />
+            <input
+              type="text"
+              id="hoanDoi2"
+              class="alert alert-danger"
+              placeholder="Vị trí 2"
+            />
+          </div>
+          <div class="col-6">
+            <button onclick="hoanDoi()" class="btn btn-danger">Hoán đổi</button>
+            <button
+              onclick="sxTangDan()"
+              class="btn btn-danger"
+              style="display: none"
+            >
+              Sắp xếp tăng dần
+            </button>
+          </div>
+        </div>
+        <div class="card-footer text-center">
+          <button onclick="bttuan18()" class="btn btn-success" id="btnSubmit">
+            Submit
+          </button>
+          <div
+            class="alert alert-success txt"
+            id="mangTay"
+            style="display: none"
+          >
+            Array = []
+          </div>
+          <div
+            class="alert alert-success txt"
+            id="mangSoThuc"
+            style="display: none"
+          >
+            ....
+          </div>
+          <!-- CÂU 1 :  -->
+          <div
+            class="alert alert-success txt"
+            id="tongSoDuong"
+            style="display: none"
+          >
+            00
+          </div>
+          <!-- CÂU 2 :  -->
+          <div
+            class="alert alert-success txt"
+            id="demSoDuong"
+            style="display: none"
+          >
+            0
+          </div>
+          <!-- CÂU 3 :  -->
+          <div
+            class="alert alert-success txt"
+            id="timMin"
+            style="display: none"
+          >
+            0
+          </div>
+          <!-- CÂU 4 :  -->
+          <div
+            class="alert alert-success txt"
+            id="timDuongNhoNhat"
+            style="display: none"
+          >
+            0
+          </div>
+          <!-- CÂU 5 :  -->
+          <div
+            class="alert alert-success txt"
+            id="timSoChan"
+            style="display: none"
+          >
+            0
+          </div>
+          <!-- CÂU 6 :  -->
+          <div
+            class="alert alert-success txt"
+            id="hoanDoi"
+            style="display: none"
+          >
+            Nhập vào vị trí 1- vị trí 2 và bấm nút HOÁN ĐỔI để hoán đổi vị trí
+            mảng !
+          </div>
+          <!-- CÂU 7 :  -->
+          <div
+            class="alert alert-success txt"
+            id="tangDan"
+            style="display: none"
+          >
+            Bấm vào nút SẮP XẾP TĂNG DẦN để sắp xếp lại mảng !
+          </div>
+          <!-- CÂU 8 :  -->
+          <div class="alert alert-success txt" id="SNT" style="display: none">
+            0
+          </div>
+          <!-- CÂU 9 :  -->
+          <div
+            class="alert alert-success txt"
+            id="soNguyen"
+            style="display: none"
+          >
+            0
+          </div>
+          <!-- CÂU 10 :  -->
+          <div
+            class="alert alert-success txt"
+            id="soSanhAmDuong"
+            style="display: none"
+          >
+            0
+          </div>
+        </div>
+      </div>
+      <br />
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="/index.js"></script>
+  </body>
+</html>
